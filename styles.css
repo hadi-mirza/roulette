@@ -1,0 +1,18 @@
+body {
+    background: rgb(0, 124, 10);
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  div.circTxt {
+    display: inline-block;
+    margin-bottom: 128px;
+    color: whitesmoke;
+  }
+
+  #ball {
+      position: absolute;
+      transform: rotate(360deg);
+  }
