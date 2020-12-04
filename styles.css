@@ -2,8 +2,12 @@ body {
     background: rgb(0, 124, 10);
   }
   
-  .container {
+  #container {
     text-align: center;
+    transition: all;
+    width: auto;
+    height: 755px;
+    transition-duration: 4s;
   }
   
   div.circTxt {
@@ -12,7 +16,11 @@ body {
     color: whitesmoke;
   }
 
-  #ball {
+  .spin {
+      transform: rotate(1080deg);
+  }
+
+  /* #ball {
       position: absolute;
       transform: rotate(360deg);
-  }
+  } */
