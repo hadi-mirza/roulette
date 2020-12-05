@@ -2,7 +2,6 @@ body {
   background: rgb(0, 124, 10);
 }
 
-
 .rotate {
   animation: rotation 45s infinite linear;
 }
@@ -18,12 +17,12 @@ body {
 
 .circle {
   position: relative;
+  border-radius: 50%;
   border: 5px solid goldenrod;
   padding: 0;
   margin: 0 auto;
   width: 80vh;
   height: 80vh;
-  border-radius: 50%;
   list-style: none;
   overflow: hidden;
 }
@@ -46,6 +45,8 @@ li {
   transform: skewY(80deg) rotate(5deg);
   padding-top: 10px;
   color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 li:nth-child(1) {
@@ -58,107 +59,107 @@ li:nth-child(3) {
   transform: rotate(20deg) skewY(-80deg);
 }
 li:nth-child(4) {
-  transform: rotate(30deg) skewY(-80deg);
+  transform: rotate(29deg) skewY(-80deg);
 }
 li:nth-child(5) {
-  transform: rotate(40deg) skewY(-80deg);
+  transform: rotate(39deg) skewY(-80deg);
 }
 li:nth-child(6) {
-  transform: rotate(50deg) skewY(-80deg);
+  transform: rotate(49deg) skewY(-80deg);
 }
 li:nth-child(7) {
-  transform: rotate(60deg) skewY(-80deg);
+  transform: rotate(59deg) skewY(-80deg);
 }
 li:nth-child(8) {
-  transform: rotate(70deg) skewY(-80deg);
+  transform: rotate(68deg) skewY(-80deg);
 }
 li:nth-child(9) {
-  transform: rotate(80deg) skewY(-80deg);
+  transform: rotate(78deg) skewY(-80deg);
 }
 li:nth-child(10) {
-  transform: rotate(90deg) skewY(-80deg);
+  transform: rotate(88deg) skewY(-80deg);
 }
 li:nth-child(11) {
-  transform: rotate(100deg) skewY(-80deg);
+  transform: rotate(98deg) skewY(-80deg);
 }
 li:nth-child(12) {
-  transform: rotate(110deg) skewY(-80deg);
+  transform: rotate(107deg) skewY(-80deg);
 }
 li:nth-child(13) {
-  transform: rotate(120deg) skewY(-80deg);
+  transform: rotate(117deg) skewY(-80deg);
 }
 li:nth-child(14) {
-  transform: rotate(130deg) skewY(-80deg);
+  transform: rotate(127deg) skewY(-80deg);
 }
 li:nth-child(15) {
-  transform: rotate(140deg) skewY(-80deg);
+  transform: rotate(137deg) skewY(-80deg);
 }
 li:nth-child(16) {
-  transform: rotate(150deg) skewY(-80deg);
+  transform: rotate(146deg) skewY(-80deg);
 }
 li:nth-child(17) {
-  transform: rotate(160deg) skewY(-80deg);
+  transform: rotate(156deg) skewY(-80deg);
 }
 li:nth-child(18) {
-  transform: rotate(170deg) skewY(-80deg);
+  transform: rotate(166deg) skewY(-80deg);
 }
 li:nth-child(19) {
-  transform: rotate(180deg) skewY(-80deg);
+  transform: rotate(176deg) skewY(-80deg);
 }
 li:nth-child(20) {
-  transform: rotate(190deg) skewY(-80deg);
+  transform: rotate(185deg) skewY(-80deg);
 }
 li:nth-child(21) {
-  transform: rotate(200deg) skewY(-80deg);
+  transform: rotate(195deg) skewY(-80deg);
 }
 li:nth-child(22) {
-  transform: rotate(210deg) skewY(-80deg);
+  transform: rotate(205deg) skewY(-80deg);
 }
 li:nth-child(23) {
-  transform: rotate(220deg) skewY(-80deg);
+  transform: rotate(215deg) skewY(-80deg);
 }
 li:nth-child(24) {
-  transform: rotate(230deg) skewY(-80deg);
+  transform: rotate(224deg) skewY(-80deg);
 }
 li:nth-child(25) {
-  transform: rotate(240deg) skewY(-80deg);
+  transform: rotate(234deg) skewY(-80deg);
 }
 li:nth-child(26) {
-  transform: rotate(250deg) skewY(-80deg);
+  transform: rotate(244deg) skewY(-80deg);
 }
 li:nth-child(27) {
-  transform: rotate(260deg) skewY(-80deg);
+  transform: rotate(254deg) skewY(-80deg);
 }
 li:nth-child(28) {
-  transform: rotate(270deg) skewY(-80deg);
+  transform: rotate(263deg) skewY(-80deg);
 }
 li:nth-child(29) {
-  transform: rotate(280deg) skewY(-80deg);
+  transform: rotate(273deg) skewY(-80deg);
 }
 li:nth-child(30) {
-  transform: rotate(290deg) skewY(-80deg);
+  transform: rotate(283deg) skewY(-80deg);
 }
 li:nth-child(31) {
-  transform: rotate(300deg) skewY(-80deg);
+  transform: rotate(293deg) skewY(-80deg);
 }
 li:nth-child(32) {
-  transform: rotate(310deg) skewY(-80deg);
+  transform: rotate(302deg) skewY(-80deg);
 }
 li:nth-child(33) {
-  transform: rotate(320deg) skewY(-80deg);
+  transform: rotate(312deg) skewY(-80deg);
 }
 li:nth-child(34) {
-  transform: rotate(330deg) skewY(-80deg);
+  transform: rotate(322deg) skewY(-80deg);
 }
 li:nth-child(35) {
-  transform: rotate(340deg) skewY(-80deg);
+  transform: rotate(332deg) skewY(-80deg);
 }
 li:nth-child(36) {
-  transform: rotate(350deg) skewY(-80deg);
+  transform: rotate(341deg) skewY(-80deg);
 }
-/* li:nth-child(37) {
-    transform: rotate(350deg) skewY(-80deg);
-  } */
+li:nth-child(37) {
+    transform: rotate(351deg) skewY(-80deg);
+  }
 li:nth-child(odd) .text {
   background-color: black;
 }
