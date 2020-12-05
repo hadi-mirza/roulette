@@ -10,16 +10,17 @@
   <body>
     <div class="game-board">
         <div class="wheel rotate">
-            <!-- <div class="innerWheel"></div> -->
+            <div class="innerWheel"></div>
+            <div class="mostInnerWheel"></div>
       <ul>
         <li>
-          <div class="wheelSlice">0</div>
+          <div class="wheelSlice" id="zero">0</div>
         </li>
         <li>
-          <div class="wheelSlice">32</div>
+          <div class="wheelSlice" id="thirty-two">32</div>
         </li>
         <li>
-          <div class="wheelSlice">15</div>
+          <div class="wheelSlice" id="fifteen">15</div>
         </li>
         <li>
           <div class="wheelSlice">19</div>
@@ -125,6 +126,9 @@
           </li>
       </ul>
     </div>
+    </div>
+    <div class="actions">
+        <button id="spin">Spin!</button>
     </div>
   </body>
 </html>

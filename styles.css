@@ -3,10 +3,11 @@ body {
 }
 
 .game-board {
-    position: relative;
-    margin: 0 auto;
-    width: 75vh;
-    height: 75vh;
+
+  margin: 0 auto;
+  height: 900px;
+  width: 900px;
+
 }
 
 .rotate {
@@ -37,16 +38,26 @@ body {
 
 .innerWheel {
     z-index: 1;
-    position: relative;
-    border-radius: 50%;
-    border: 5px solid goldenrod;
-    padding: 0;
-    margin: 0 auto;
-    height: 80%;
-    width: 80%;
+    position: absolute;
+    width: 85%;
+    height: 85%;
     top: 60px;
-    left: 0px;
+    left: 60px;
     background-color: black;
+    border-radius: 50%;
+    border: 8px solid silver;
+}
+
+.mostInnerWheel {
+    z-index: 2;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 125px;
+    left: 130px;
+    background-color: rgb(2, 68, 0);
+    border-radius: 50%;
+    border: 8px solid silver;
 }
 
 li {
@@ -180,8 +191,8 @@ li:nth-child(36) {
   transform: rotate(341deg) skewY(-80deg);
 }
 li:nth-child(37) {
-    transform: rotate(351deg) skewY(-80deg);
-  }
+  transform: rotate(351deg) skewY(-80deg);
+}
 li:nth-child(odd) .wheelSlice {
   background-color: black;
 }
@@ -192,5 +203,20 @@ li:first-child .wheelSlice {
   background: green;
 }
 li:nth-child(37) {
-    background-color: red;
+  background-color: red;
 }
+
+
+.ballActive {
+    position: absolute;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    text-align: center;
+    transform: skewY(80deg) rotate(5deg);
+    padding-top: 10px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: inherit;
+    background-image: url(ball.png);
+  }
