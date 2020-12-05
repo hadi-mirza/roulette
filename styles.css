@@ -20,29 +20,12 @@ body {
   position: relative;
   border: 5px solid goldenrod;
   padding: 0;
-  margin: 1em auto;
+  margin: 0 auto;
   width: 80vh;
   height: 80vh;
   border-radius: 50%;
   list-style: none;
   overflow: hidden;
-}
-
-.innerCircle {
-  z-index: 1;
-  position: fixed;
-  /* left: 150px; */
-  left: 50px;
-  top: 70px;
-  border: 5px solid goldenrod;
-  padding: 0;
-  margin: 1em auto;
-  width: 70vh;
-  height: 70vh;
-  border-radius: 50%;
-  list-style: none;
-  overflow: hidden;
-  background-color: whitesmoke;
 }
 
 li {
@@ -60,10 +43,12 @@ li {
   width: 200%;
   height: 200%;
   text-align: center;
-  transform: skewY(80deg) rotate(15deg);
-  padding-top: 0px;
+  transform: skewY(80deg) rotate(5deg);
+  padding-top: 10px;
+  color: whitesmoke;
 }
-li:first-child {
+
+li:nth-child(1) {
   transform: rotate(0deg) skewY(-80deg);
 }
 li:nth-child(2) {
@@ -171,6 +156,9 @@ li:nth-child(35) {
 li:nth-child(36) {
   transform: rotate(350deg) skewY(-80deg);
 }
+/* li:nth-child(37) {
+    transform: rotate(350deg) skewY(-80deg);
+  } */
 li:nth-child(odd) .text {
   background-color: black;
 }
@@ -179,4 +167,7 @@ li:nth-child(even) .text {
 }
 li:first-child .text {
   background: green;
+}
+li:nth-child(37) {
+    background-color: red;
 }
