@@ -53,9 +53,9 @@ body {
     position: absolute;
     width: 70%;
     height: 70%;
-    top: 125px;
-    left: 130px;
-    background-color: rgb(2, 68, 0);
+    top: 124px;
+    left: 126px;
+    background-color: rgb(109, 109, 109);
     border-radius: 50%;
     border: 8px solid silver;
 }
