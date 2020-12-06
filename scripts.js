@@ -5,6 +5,7 @@ let ballPosition = ""
 let chosen = document.getElementById("chosen")
 
 let spin = document.getElementById("spin")
+
 let zero = document.getElementById("zero")
 let thirtyTwo = document.getElementById("thirty-two")
 let fifteen = document.getElementById("fifteen")
