@@ -1,7 +1,10 @@
 let randNum;
 let wheelValues = document.getElementsByClassName("wheelSlice") 
 let ballPosition = ""
+let bankRoll = 5000
 
+let bankRollDisplay = document.getElementById("bank-roll")
+let betsChosen = document.getElementById("bets-chosen")
 let chosen = document.getElementById("chosen")
 
 let spin = document.getElementById("spin")
@@ -44,9 +47,7 @@ let thirtyFive = document.getElementById("thirty-five")
 let three = document.getElementById("three")
 let twentySix = document.getElementById("twenty-six")
 
-spin.addEventListener("click", getRand)
-
-function getRand() {
+spin.addEventListener("click", () => {
     init(zero)
     init(one)
     init(two)
@@ -84,10 +85,22 @@ function getRand() {
     init(thirtyFour)
     init(thirtyFive)
     init(thirtySix)
+
+    getRand()
+})
+
+function getRand() {
+
     randNum = Math.floor(Math.random() * (36 - 0));
     ballPosition = randNum
     matchNum()
+    clear = setTimeout(getRand, 1000);
+    if (clear == 5) {
+        clearTimeout(clear)
+    }
+    console.log(clear)
 }
+
 function placeBall(arg) {
     arg.style.backgroundColor = "yellow"
     arg.style.color = "black"
@@ -212,3 +225,215 @@ function matchNum() {
         placeBall(twentySix)
     }
 }
+
+// Betting System
+
+function updateBankRoll() {
+    bankRollDisplay.innerHTML = "$" + bankRoll
+    betsChosen.innerHTML = betNumArr
+    if (betNumArr.length == 5) {
+        alert("max bet")
+    }
+}
+
+betNumArr = []
+
+document.getElementById("zero-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    
+    betNumArr.push("0")
+    updateBankRoll()
+}) 
+document.getElementById("thirty-two-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("32")
+    updateBankRoll()
+})
+document.getElementById("fifteen-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("15")
+    updateBankRoll()
+})
+document.getElementById("nineteen-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("19")
+    updateBankRoll()
+})
+document.getElementById("four-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("4")
+    updateBankRoll()
+
+})
+document.getElementById("twenty-one-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("21")
+    updateBankRoll()
+
+})
+document.getElementById("two-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("2")
+    updateBankRoll()
+
+})
+document.getElementById("twenty-five-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("25")
+    updateBankRoll()
+})
+document.getElementById("seventeen-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("17")
+    updateBankRoll()
+})
+document.getElementById("thirty-four-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("34")
+    updateBankRoll()
+})
+document.getElementById("six-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("6")
+    updateBankRoll()
+})
+document.getElementById("twenty-seven-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("27")
+    updateBankRoll()
+})
+document.getElementById("thirteen-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("13")
+    updateBankRoll()
+})
+document.getElementById("thirty-six-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("36")
+    updateBankRoll()
+})
+document.getElementById("eleven-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("11")
+    updateBankRoll()
+})
+document.getElementById("thirty-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("30")
+    updateBankRoll()
+})
+document.getElementById("eight-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("8")
+    updateBankRoll()
+})
+document.getElementById("twenty-three-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("23")
+    updateBankRoll()
+})
+document.getElementById("ten-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("10")
+    updateBankRoll()
+})
+document.getElementById("five-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("5")
+    updateBankRoll()
+})
+document.getElementById("twenty-four-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("24")
+    updateBankRoll()
+})
+document.getElementById("sixteen-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("16")
+    updateBankRoll()
+})
+document.getElementById("thirty-three-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("33")
+    updateBankRoll()
+})
+document.getElementById("one-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("1")
+    updateBankRoll()
+})
+document.getElementById("twenty-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("20")
+    updateBankRoll()
+})
+document.getElementById("fourteen-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("14")
+    updateBankRoll()
+})
+document.getElementById("thirty-one-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("31")
+    updateBankRoll()
+})
+document.getElementById("nine-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("9")
+    updateBankRoll()
+})
+document.getElementById("twenty-two-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("22")
+    updateBankRoll()
+})
+document.getElementById("eighteen-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("18")
+    updateBankRoll()
+})
+document.getElementById("twenty-nine-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("29")
+    updateBankRoll()
+})
+document.getElementById("seven-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("7")
+    updateBankRoll()
+})
+document.getElementById("twenty-eight-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("28")
+    updateBankRoll()
+})
+document.getElementById("twelve-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("12")
+    updateBankRoll()
+})
+document.getElementById("thirty-five-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("35")
+    updateBankRoll()
+})
+document.getElementById("three-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("3")
+    updateBankRoll()
+})
+document.getElementById("twenty-six-bet").addEventListener("click", function() {
+    bankRoll -= 250
+    betNumArr.push("26")
+    updateBankRoll()
+})
+
+// console.log(bankRoll)
+
+// zeroBet.addEventListener("click", bet)
+
+// function bet() {
+
+// }
+
+//use find in array to compare numbers with bets to chosen number

@@ -9,127 +9,172 @@
   </head>
   <body>
     <div class="game-board">
-        <div class="wheel rotate">
-            <div class="innerWheel"></div>
+        <div class="wheel">
+            <div class="innerWheel">
+                <div id="ball"></div>
+            </div>
             <div class="mostInnerWheel"></div>
-      <ul>
-        <li>
-          <div class="wheelSlice" id="zero">0</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="thirty-two">32</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="fifteen">15</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="nineteen">19</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="four">4</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="twenty-one">21</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="two">2</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="twenty-five">25</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="seventeen">17</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="thirty-four">34</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="six">6</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="twenty-seven">27</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="thirteen">13</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="thirty-six">36</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="eleven">11</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="thirty">30</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="eight">8</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="twenty-three">23</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="ten">10</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="five">5</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="twenty-four">24</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="sixteen">16</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="thirty-three">33</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="one">1</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="twenty">20</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="fourteen">14</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="thirty-one">31</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="nine">9</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="twenty-two">22</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="eighteen">18</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="twenty-nine">29</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="seven">7</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="twenty-eight">28</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="twelve">12</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="thirty-five">35</div>
-        </li>
-        <li>
-          <div class="wheelSlice" id="three">3</div>
-        </li>
-        <li>
-            <div class="wheelSlice" id="twenty-six">26</div>
-          </li>
-      </ul>
+            <ul>
+                <li>
+                  <div class="wheelSlice" id="zero">0</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="thirty-two">32</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="fifteen">15</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="nineteen">19</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="four">4</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="twenty-one">21</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="two">2</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="twenty-five">25</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="seventeen">17</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="thirty-four">34</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="six">6</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="twenty-seven">27</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="thirteen">13</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="thirty-six">36</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="eleven">11</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="thirty">30</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="eight">8</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="twenty-three">23</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="ten">10</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="five">5</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="twenty-four">24</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="sixteen">16</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="thirty-three">33</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="one">1</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="twenty">20</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="fourteen">14</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="thirty-one">31</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="nine">9</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="twenty-two">22</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="eighteen">18</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="twenty-nine">29</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="seven">7</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="twenty-eight">28</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="twelve">12</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="thirty-five">35</div>
+                </li>
+                <li>
+                  <div class="wheelSlice" id="three">3</div>
+                </li>
+                <li>
+                    <div class="wheelSlice" id="twenty-six">26</div>
+                  </li>
+              </ul>
     </div>
     </div>
     <div class="actions">
         <button id="spin">Spin!</button>
         <p id="chosen">null</p>
+        <p id="bank-roll">$5000</p>
+        <p>Bets Chosen: </p><span id="bets-chosen"></span>
+        <div class="betting" id="bet-buttons">
+            <button id="zero-bet">0</button>
+            <button id="one-bet">1</button>
+            <button id="two-bet">2</button>
+            <button id="three-bet">3</button>
+            <button id="four-bet">4</button>
+            <button id="five-bet">5</button>
+            <button id="six-bet">6</button>
+            <button id="seven-bet">7</button>
+            <button id="eight-bet">8</button>
+            <button id="nine-bet">9</button>
+            <button id="ten-bet">10</button>
+            <button id="eleven-bet">11</button>
+            <button id="twelve-bet">12</button>
+            <br>
+            <button id="thirteen-bet">13</button>
+            <button id="fourteen-bet">14</button>
+            <button id="fifteen-bet">15</button>
+            <button id="sixteen-bet">16</button>
+            <button id="seventeen-bet">17</button>
+            <button id="eighteen-bet">18</button>
+            <button id="nineteen-bet">19</button>
+            <button id="twenty-bet">20</button>
+            <button id="twenty-one-bet">21</button>
+            <button id="twenty-two-bet">22</button>
+            <button id="twenty-three-bet">23</button>
+            <button id="twenty-four-bet">24</button>
+            <br>
+            <button id="twenty-five-bet">25</button>
+            <button id="twenty-six-bet">26</button>
+            <button id="twenty-seven-bet">27</button>
+            <button id="twenty-eight-bet">28</button>
+            <button id="twenty-nine-bet">29</button>
+            <button id="thirty-bet">30</button>
+            <button id="thirty-one-bet">31</button>
+            <button id="thirty-two-bet">32</button>
+            <button id="thirty-three-bet">33</button>
+            <button id="thirty-four-bet">34</button>
+            <button id="thirty-five-bet">35</button>
+            <button id="thirty-six-bet">36</button>
+        </div>
     </div>
   </body>
 </html>
