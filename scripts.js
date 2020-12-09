@@ -2,6 +2,7 @@ let randNum;
 let wheelValues = document.getElementsByClassName("wheelSlice") 
 let ballPosition = ""
 let bankRoll = 5000
+let randomNumberCount = 0
 
 let bankRollDisplay = document.getElementById("bank-roll")
 let betsChosen = document.getElementById("bets-chosen")
@@ -86,20 +87,30 @@ spin.addEventListener("click", () => {
     init(thirtyFive)
     init(thirtySix)
 
-    getRand()
+    getRandomNumber()
 })
 
-function getRand() {
+function resetTurn(){
+     randomNumberCount = 0
 
+     //Add array reset and execute functions for matching bets with chosen.
+ }
+ 
+ function getRandomNumber(){
+//execute ball spinning animation
+
+   if(randomNumberCount === 5){
+     return resetTurn()
+   } else {
     randNum = Math.floor(Math.random() * (36 - 0));
     ballPosition = randNum
     matchNum()
-    clear = setTimeout(getRand, 1000);
-    if (clear == 5) {
-        clearTimeout(clear)
-    }
-    console.log(clear)
-}
+     randomNumberCount +=1
+     setTimeout(getRandomNumber, 1000)
+
+     //add array and manipulate DOM
+   }
+ }
 
 function placeBall(arg) {
     arg.style.backgroundColor = "yellow"
@@ -232,11 +243,11 @@ function updateBankRoll() {
     bankRollDisplay.innerHTML = "$" + bankRoll
     betsChosen.innerHTML = betNumArr
     if (betNumArr.length == 5) {
-        alert("max bet")
+        alert("max bet") // Change this to DOM
     }
 }
 
-betNumArr = []
+let betNumArr = []
 
 document.getElementById("zero-bet").addEventListener("click", function() {
     bankRoll -= 250
@@ -428,12 +439,5 @@ document.getElementById("twenty-six-bet").addEventListener("click", function() {
     updateBankRoll()
 })
 
-// console.log(bankRoll)
-
-// zeroBet.addEventListener("click", bet)
-
-// function bet() {
-
-// }
-
 //use find in array to compare numbers with bets to chosen number
+// if chosen.innerhtml == betArr(find), add money to bank roll.
