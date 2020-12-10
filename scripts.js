@@ -3,7 +3,7 @@ let wheelValues = document.getElementsByClassName("wheelSlice");
 let ballPosition = "";
 let bankRoll = 5000;
 let randomNumberCount = 0;
-let winAmountCount = 0
+let winAmountCount = "0"
 
 let bankRollDisplay = document.getElementById("bank-roll");
 let betsChosen = document.getElementById("bets-chosen");
@@ -112,15 +112,11 @@ function resetTurn() {
   wheelNumArray = [];
   betNumArr = [];
   disableBet("auto")
-
-  //Add array reset and execute functions for matching bets with chosen.
 }
 
 let wheelNumArray = [];
 
 function getRandomNumber() {
-  //execute ball spinning animation
-
   if (randomNumberCount === 5) {
     rouletteMatch();
     return resetTurn();
@@ -163,12 +159,10 @@ function rouletteMatch() {
       bankRoll += 250 * 35;
       winAmountCount += 250 * 35
       updateBankRoll();
+    } else {
+        updateBankRoll();
     }
   }
-}
-
-function winAmount() {
-    document.getElementById("info").innerHTML
 }
 
 function updateNumChosen(chosen) {
@@ -317,23 +311,33 @@ function updateBankRollArr() {
 }
 
 function updateBankRoll() {
-  bankRollDisplay.innerHTML = "$" + bankRoll;
-
-  if (winAmountCount >= 1) {
-  info.innerHTML = "You Won $" + winAmountCount + "! Bet up to 5 numbers and spin again!"
+  if (winAmountCount >= "1") {
+    bankRollDisplay.innerHTML = "$" + bankRoll;
+    info.innerHTML = "You Won $" + winAmountCount + "! Bet up to 5 numbers and spin again!"
   } else {
       info.innerHTML = "No Win! Bet up to 5 numbers and spin again!"
   }
 }
 
+// function bankrupt() {
+//     if (bankRoll < 0) {
+//         alert("You've gone bankrupt!")
+//         location.reload()
+//     } else {
+//         return
+//     }
+// }
+
 let betNumArr = [];
 
 document.getElementById("zero-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+//   bankrupt()
+    bankRoll -= 250;
   betNumArr.push("0");
   updateBankRollArr();
 });
 document.getElementById("thirty-two-bet").addEventListener("click", function () {
+    bankrupt()
     bankRoll -= 250;
     betNumArr.push("32");
     updateBankRollArr();

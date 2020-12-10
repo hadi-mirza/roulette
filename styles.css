@@ -108,6 +108,7 @@ body {
     padding: 0;
     background-color: rgb(211, 7, 0);
     border: none;
+    border-radius: 7px;
     font-size: 4em;
     color: white;
 }
