@@ -1,5 +1,7 @@
 # Roulette
 
+<img src="screen.png">
+
 ## Rules
 
 - Payout is 35 to 1 (for example a $250 bet on a winning number will net $8,750).
