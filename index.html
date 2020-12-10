@@ -9,11 +9,11 @@
   </head>
   <body>
     <div class="game-board">
-        <div class="wheel">
-            <div class="innerWheel">
+        <div class="wheel rotate">
+            <div id="innerWheel">
                 <div id="ball"></div>
             </div>
-            <div class="mostInnerWheel"></div>
+            <div class="mostInnerWheel"><p id="chosen"></p></div>
             <ul>
                 <li>
                   <div class="wheelSlice" id="zero">0</div>
@@ -130,11 +130,8 @@
     </div>
     </div>
     <div class="actions">
-        <button id="spin">Spin!</button>
-        <p id="chosen">null</p>
-        <p id="bank-roll">$5000</p>
-        <p>Bets Chosen: </p><span id="bets-chosen"></span>
-        <p>Numbers Chosen: </p><span id="numbers-chosen"></span>
+        <p>Player Bank: <span id="bank-roll">$5000</span></p>
+        <p>Each bet is $250 - Payout is 35:1</p>
         <div class="betting" id="bet-buttons">
             <button id="zero-bet">0</button>
             <button id="one-bet">1</button>
@@ -176,6 +173,11 @@
             <button id="thirty-five-bet">35</button>
             <button id="thirty-six-bet">36</button>
         </div>
+        <p>Bets Chosen: <span id="bets-chosen"></span></p>
+        <p>Numbers Chosen: <span id="numbers-chosen"></span></p>
+        <p id="info"></p>
+        <button id="spin">Spin! x5</button>
+        
     </div>
   </body>
 </html>
