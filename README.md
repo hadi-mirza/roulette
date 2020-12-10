@@ -27,4 +27,4 @@
 
 ## Let's Play!
 
-(link)
+https://hvzy.github.io/roulette/
