@@ -24,6 +24,7 @@
 - Show last 20 chosen numbers from wheel.
 - Show visual confirmation of bet numbers in button box.
 - Allow more than 5 spins depending on how many bets were chosen (if 8 bets were placed, spin the roulette wheel 8 times)
+- Add more betting scenarios (1-12, 13-24, odds, evens, etc.)
 
 ## Let's Play!
 
