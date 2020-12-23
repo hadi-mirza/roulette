@@ -28,4 +28,4 @@
 
 ## Let's Play!
 
-https://hvzy.github.io/roulette/
+https://hadi-mirza.github.io/roulette/
