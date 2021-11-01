@@ -38,6 +38,12 @@ body {
   margin: 2px;
 }
 
+.actions .betAmount button {
+  width: 80px;
+  height: 40px;
+  margin: 2px;
+}
+
 #bank-roll {
   font-size: 2em;
   text-align: right;
