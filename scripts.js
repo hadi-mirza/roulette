@@ -26,6 +26,10 @@ let info = document.getElementById("info");
 let betDiv = document.getElementById("bet-buttons");
 
 let spin = document.getElementById("spin");
+let betAmount = 0;
+let betAmount250 = document.getElementById("bet-amount-250");
+let betAmount500 = document.getElementById("bet-amount-500");
+let betAmount750 = document.getElementById("bet-amount-750");
 
 let zero = document.getElementById("zero");
 let thirtyTwo = document.getElementById("thirty-two");
@@ -67,7 +71,23 @@ let twentySix = document.getElementById("twenty-six");
 
 // Event Listeners
 
+betAmount250.addEventListener("click", () => {
+  betAmount = 250
+  console.log(betAmount)
+})
+
+betAmount500.addEventListener("click", () => {
+  betAmount = 500
+  console.log(betAmount)
+})
+
+betAmount750.addEventListener("click", () => {
+  betAmount = 750
+  console.log(betAmount)
+})
+
 spin.addEventListener("click", () => {
+  console.log(betAmount)
   init(zero);
   init(one);
   init(two);
@@ -145,24 +165,24 @@ function getRandomNumber() {
 function rouletteMatch() {
   for (i = 0; i < betNumArr.length; i++) {
     if (betNumArr[i] == wheelNumArray[0]) {
-      bankRoll += 250 * 35;
-      winAmountCount += 250 * 35;
+      bankRoll += betAmount * 35;
+      winAmountCount += betAmount * 35;
       updateBankRoll();
     } else if (betNumArr[i] == wheelNumArray[1]) {
-      bankRoll += 250 * 35;
-      winAmountCount += 250 * 35;
+      bankRoll += betAmount * 35;
+      winAmountCount += betAmount * 35;
       updateBankRoll();
     } else if (betNumArr[i] == wheelNumArray[2]) {
-      bankRoll += 250 * 35;
-      winAmountCount += 250 * 35;
+      bankRoll += betAmount * 35;
+      winAmountCount += betAmount * 35;
       updateBankRoll();
     } else if (betNumArr[i] == wheelNumArray[3]) {
-      bankRoll += 250 * 35;
-      winAmountCount += 250 * 35;
+      bankRoll += betAmount * 35;
+      winAmountCount += betAmount * 35;
       updateBankRoll();
     } else if (betNumArr[i] == wheelNumArray[4]) {
-      bankRoll += 250 * 35;
-      winAmountCount += 250 * 35;
+      bankRoll += betAmount * 35;
+      winAmountCount += betAmount * 35;
       updateBankRoll();
     } else {
       updateBankRoll();
@@ -325,188 +345,192 @@ function updateBankRoll() {
   }
 }
 
+function updateBankRollBet() {
+  bankRoll -= betAmount;
+}
+
 document.getElementById("zero-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("0");
   updateBankRollArr();
 });
 document.getElementById("thirty-two-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("32");
     updateBankRollArr();
   });
 document.getElementById("fifteen-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("15");
   updateBankRollArr();
 });
 document.getElementById("nineteen-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("19");
   updateBankRollArr();
 });
 document.getElementById("four-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("4");
   updateBankRollArr();
 });
 document.getElementById("twenty-one-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("21");
     updateBankRollArr();
   });
 document.getElementById("two-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("2");
   updateBankRollArr();
 });
 document.getElementById("twenty-five-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("25");
     updateBankRollArr();
   });
 document.getElementById("seventeen-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("17");
   updateBankRollArr();
 });
 document.getElementById("thirty-four-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("34");
     updateBankRollArr();
   });
 document.getElementById("six-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("6");
   updateBankRollArr();
 });
 document.getElementById("twenty-seven-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("27");
     updateBankRollArr();
   });
 document.getElementById("thirteen-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("13");
   updateBankRollArr();
 });
 document.getElementById("thirty-six-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("36");
     updateBankRollArr();
   });
 document.getElementById("eleven-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("11");
   updateBankRollArr();
 });
 document.getElementById("thirty-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("30");
   updateBankRollArr();
 });
 document.getElementById("eight-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("8");
   updateBankRollArr();
 });
 document.getElementById("twenty-three-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("23");
     updateBankRollArr();
   });
 document.getElementById("ten-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("10");
   updateBankRollArr();
 });
 document.getElementById("five-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("5");
   updateBankRollArr();
 });
 document.getElementById("twenty-four-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("24");
     updateBankRollArr();
   });
 document.getElementById("sixteen-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("16");
   updateBankRollArr();
 });
 document.getElementById("thirty-three-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("33");
     updateBankRollArr();
   });
 document.getElementById("one-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("1");
   updateBankRollArr();
 });
 document.getElementById("twenty-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("20");
   updateBankRollArr();
 });
 document.getElementById("fourteen-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("14");
   updateBankRollArr();
 });
 document.getElementById("thirty-one-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("31");
     updateBankRollArr();
   });
 document.getElementById("nine-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("9");
   updateBankRollArr();
 });
 document.getElementById("twenty-two-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("22");
     updateBankRollArr();
   });
 document.getElementById("eighteen-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("18");
   updateBankRollArr();
 });
 document.getElementById("twenty-nine-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("29");
     updateBankRollArr();
   });
 document.getElementById("seven-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("7");
   updateBankRollArr();
 });
 document.getElementById("twenty-eight-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("28");
     updateBankRollArr();
   });
 document.getElementById("twelve-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("12");
   updateBankRollArr();
 });
 document.getElementById("thirty-five-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("35");
     updateBankRollArr();
   });
 document.getElementById("three-bet").addEventListener("click", function () {
-  bankRoll -= 250;
+  updateBankRollBet()
   betNumArr.push("3");
   updateBankRollArr();
 });
 document.getElementById("twenty-six-bet").addEventListener("click", function () {
-    bankRoll -= 250;
+    updateBankRollBet()
     betNumArr.push("26");
     updateBankRollArr();
   });
