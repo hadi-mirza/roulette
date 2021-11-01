@@ -19,7 +19,7 @@
 
 ## Planned Features
 
-- Add multiple bet values for players to choose (50, 250, 500, 1000).
+- (Completed) Add multiple bet values for players to choose (50, 250, 500, 1000).
 - Match bet and winning numbers in seperate box.
 - Show last 20 chosen numbers from wheel.
 - Show visual confirmation of bet numbers in button box.
