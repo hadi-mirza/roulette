@@ -30,6 +30,8 @@ let betAmount = 0;
 let betAmount250 = document.getElementById("bet-amount-250");
 let betAmount500 = document.getElementById("bet-amount-500");
 let betAmount750 = document.getElementById("bet-amount-750");
+let betAmount1000 = document.getElementById("bet-amount-1000");
+let addFunds5000 = document.getElementById("add-funds-5000");
 
 let zero = document.getElementById("zero");
 let thirtyTwo = document.getElementById("thirty-two");
@@ -73,21 +75,27 @@ let twentySix = document.getElementById("twenty-six");
 
 betAmount250.addEventListener("click", () => {
   betAmount = 250
-  console.log(betAmount)
 })
 
 betAmount500.addEventListener("click", () => {
   betAmount = 500
-  console.log(betAmount)
 })
 
 betAmount750.addEventListener("click", () => {
   betAmount = 750
-  console.log(betAmount)
+})
+
+betAmount1000.addEventListener("click", () => {
+  betAmount = 1000
+})
+
+addFunds5000.addEventListener("click", () => {
+  bankRoll += 5000;
+  console.log(bankRoll)
+  bankRollDisplay.innerHTML = `$${bankRoll}`
 })
 
 spin.addEventListener("click", () => {
-  console.log(betAmount)
   init(zero);
   init(one);
   init(two);
@@ -157,8 +165,7 @@ function getRandomNumber() {
     randomNumberCount += 1;
     updateNumChosen(ballPosition);
     setTimeout(getRandomNumber, 1000);
-    console.log(wheelNumArray);
-    console.log(betNumArr);
+    
   }
 }
 

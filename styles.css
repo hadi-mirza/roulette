@@ -308,3 +308,7 @@ li:nth-child(even) .wheelSlice {
 li:first-child .wheelSlice {
   background: green;
 }
+
+#add-funds-5000 {
+  width: 100px;
+}
