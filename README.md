@@ -20,6 +20,7 @@
 ## Planned Features
 
 - (Completed) Add multiple bet values for players to choose (50, 250, 500, 1000).
+- (Completed) Add fund button to buy-in 5k to player bank.
 - Match bet and winning numbers in seperate box.
 - Show last 20 chosen numbers from wheel.
 - Show visual confirmation of bet numbers in button box.
